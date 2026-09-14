@@ -7,7 +7,7 @@ import LoadHeadset from './pages/LoadHeadset'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
