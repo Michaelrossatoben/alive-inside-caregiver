@@ -39,18 +39,14 @@ export default function Home() {
   return (
     <div>
       <header className="hero">
-        <div className="hero-logo" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M18 42c6-14 10-22 14-22s8 8 14 22"
-              stroke="#1A1A1A"
-              strokeWidth="3.5"
-              strokeLinecap="round"
-            />
-            <circle cx="32" cy="24" r="4.5" fill="#FFF8F0" />
-          </svg>
+        <div className="hero-logo">
+          <img
+            src={`${import.meta.env.BASE_URL}alive-inside-logo.png`}
+            alt="Alive Inside"
+            width={96}
+            height={96}
+          />
         </div>
-        <p className="brand-sub">Alive Inside</p>
         <h1>Caregiver</h1>
         <p className="tagline">
           Music can wake identity. Caregivers deserve support. Practical tools for
